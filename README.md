@@ -21,6 +21,7 @@ _Foi feito com muito entusiasmo e carinho :)_
 - Variáveis de Ambiente com **DotEnv**
 - Validações com **YUP**
 - Design Pattern **MVC**
+- **TDD** usando **JEST**
 
 ## GUIA RÁPIDO DE INSTALAÇÃO
 
