@@ -4,6 +4,12 @@ Essa aplicação foi desenvolvida exclusivamente para praticar os conhecimentos 
 
 _Foi feito com muito entusiasmo e carinho :)_
 
+## Melhorias Sugeridas
+
+- [X] TDD com JEST
+- [ ] TypeScript
+- [ ] Validações em um Controller Separado
+- [ ] Respostas e Tratamentos de Erro Padronizadas em um Controller Separado
 
 **STACK PRINCIPAL:** *Javascript, NodeJS, Express, MongoDB, Mongoose & Padrões REST*
 
