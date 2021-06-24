@@ -10,6 +10,7 @@ _Foi feito com muito entusiasmo e carinho :)_
 - [ ] TypeScript
 - [ ] Validações em um Controller Separado
 - [ ] Respostas e Tratamentos de Erro Padronizadas em um Controller Separado
+- [X] Documentação da API com Swagger
 
 **STACK PRINCIPAL:** *Javascript, NodeJS, Express, MongoDB, Mongoose & Padrões REST*
 
@@ -62,16 +63,31 @@ Considerando que você executou as etapas acima com êxito, abra o seu terminal 
 
 Pronto! a API estará rodando na porta 3333. Caso você deseje alterar para outra porta, basta adicionar ao aquivo .env do projeto como no exemplo a seguir: `PORT=3333`, trocando `3333` pela porta desejada.
 
+
+## DOCUMENTAÇÃO AUTOMÁTICA API - SWAGGER
+
+Para gerar a documentação basta rodar, antes de iniciar a aplicação, rodar o seguinte comando no terminal:
+
+````bash
+yarn swagger-autogen
+````
+
+ou, caso esteja utilizando o npm:
+
+```bash
+npm run swagger-autogen
+ ```
+
+Pronto! Documentação foi gerada. Quando rodar sua aplicação basta apenas acessar a rota `/api-docs`.
+
+
+---
 ## Endpoints
-
-
-## DOCUMENTAÇÃO BÁSICA API - ENDPOINTS
-
 ### Sessions: POST /sessions
 
 Método para logar usuário. Ele retorna o id, nome, email e token de acesso.
 
-**Body*
+*Body*
 ```
 {
   	"email": "example@example.com",
@@ -84,7 +100,7 @@ Método para logar usuário. Ele retorna o id, nome, email e token de acesso.
 
 Método para cadastrar novo usuário.
 
-**Body*
+*Body*
 
 ```
 {
