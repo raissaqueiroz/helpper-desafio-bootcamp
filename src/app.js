@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const swaggerUI = require('swagger-ui-express');
+const swaggerConfig = require('../swagger_output.json');
 
 // Database
 const database = require('./database');
@@ -56,6 +58,12 @@ class App {
 	}
 
 	routes() {
+		this.server.use(
+			'/api-docs',
+			swaggerUI.serve,
+			swaggerUI.setup(swaggerConfig)
+		);
+
 		this.server.use(routes.SessionRoute);
 		this.server.use(routes.UserRoute);
 	}
