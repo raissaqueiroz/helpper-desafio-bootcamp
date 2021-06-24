@@ -30,5 +30,6 @@ module.exports = {
 		'no-trailing-spaces': ['off', { ignoreComments: 'on' }],
 		'consistent-return': ['error', { treatUndefinedAsUnspecified: true }],
 		'object-shorthand': 'off',
+		'import/no-unresolved': [2, { caseSensitive: false }],
 	},
 };
