@@ -35,7 +35,10 @@ class App {
 			express.static(path.resolve(__dirname, '..', 'tmp', 'uploads'))
 		);
 
-		const allowedOrigins = ['http://localhost:3000'];
+		const allowedOrigins = [
+			'http://localhost:3000',
+			'http://localhost:3333',
+		];
 
 		this.server.use(
 			cors({
